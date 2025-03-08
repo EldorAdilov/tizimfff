@@ -82,12 +82,8 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # PostgreSQL uchun driver
-        'NAME': 'FUMAISAK',  # Ma'lumotlar bazasi nomi
-        'USER': 'postgres',  # PostgreSQL foydalanuvchi nomi
-        'PASSWORD': 'Eldor1999',  # PostgreSQL foydalanuvchi paroli
-        'HOST': 'localhost',  # Agar server lokal bo'lsa
-        'PORT': '5432',  # Standart PostgreSQL porti
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / "db.sqlite3",
     }
 }
 
